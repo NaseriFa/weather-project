@@ -48,6 +48,7 @@ color: rgb(246, 82, 130);
 }
 #currentTemperatureValue{
   font-size: 95px;
+  font-weight:bold;
   position:relative;
   top: 50px;
 }
