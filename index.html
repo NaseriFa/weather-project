@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>WheatherApp</title>
+  <!axios API>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weatherApp">
+      <header>
+        <form>
+          <input type="text" placeholder="Enter a city..." id="citySearchField">
+          <input type="submit" value="Search" id="searchButton">
+        </form>
+      </header>
+      <main>
+        <div id="currentWeather">
+          <div id="cityAndTime">
+            <h2 id="city">Paris</h2>
+            <p id="details">
+              <span id="day">Friday</span> <span id="hours">18</span>: <span id="minutes">48</span>, <span id="condition">moderate rain</span>
+              <br>
+              Humidity: <span id="humidityValue">87%</span>, Wind: <span id="windSpeed">7.2km/h</span>
+            </p>
+          </div>
+          <div id="currentTemperature">
+            <span id="currentTemperatureEmoji">☀️</span>
+            <span id="currentTemperatureValue">14</span>
+            <span id="currentTemperatureUnit">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by <a href="#" id="coder">Fatima Naseri</a> and is on <a href="#">GitHub</a> and hosted on <a
+            href="#">Netlify</a>
+        </p>
+      </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
